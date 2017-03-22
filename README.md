@@ -4,11 +4,11 @@ Docker image of [lora-gateway-bridge](https://github.com/brocaar/lora-gateway-br
 
 
 ### Build image
-    sudo docker build -t lora-gateway-bridge:beta -f Dockerfile-gateway_bridge .
+    sudo docker build -t iotba/rpi-lora-gateway-bridge .
 
 ### Test-Run container
-    sudo docker run --name gateway-bridge -e MQTT_SERVER=tcp:/#MQTT_IP:#MQTT_PORT -it lora-gateway-bridge:beta
+    sudo docker run --name gateway-bridge -e MQTT_SERVER=tcp:/#MQTT_IP:#MQTT_PORT -it iotba/rpi-lora-gateway-bridge
 
 ### Daemon-Run container
-    sudo docker run --name gateway-bridge lora-gateway-bridge:beta
+    sudo docker run --name gateway-bridge iotba/rpi-lora-gateway-bridge
 
